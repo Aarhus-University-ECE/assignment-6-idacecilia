@@ -5,9 +5,9 @@
 int max(int *numbers, int size) {
   // Excercise 2
   // Implement your code below...
-  int biggestNum=0;
+  int biggestNum=numbers[0];
+  assert(size>0);
   for(int i=0; i<size;i++){
-    assert(numbers[i]!=0);
     if(numbers[i]>biggestNum){
       biggestNum=numbers[i];
     }
@@ -18,7 +18,8 @@ int max(int *numbers, int size) {
 #ifndef TEST
 
 int main() {
-
+  int numbers[] = {0,0,0,0,0,0,0};
+  printf("%d",max(numbers, -1));
 	return 0;
 }
 
