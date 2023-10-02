@@ -5,14 +5,14 @@
 int max(int *numbers, int size) {
   // Excercise 2
   // Implement your code below...
-  int biggestNum=numbers[0];
-  assert(size>0);
-  for(int i=0; i<size;i++){
-    if(numbers[i]>biggestNum){
-      biggestNum=numbers[i];
+  int biggestNum=numbers[0]; //we start by initializing our biggest number to the first number
+  assert(size>0); //check precondition
+  for(int i=0; i<size;i++){ //loop through array
+    if(numbers[i]>biggestNum){ //if initialization is higher
+      biggestNum=numbers[i]; //set value to the new number
     }
   }
-  return biggestNum;
+  return biggestNum; //return highest number
 }
 
 #ifndef TEST
