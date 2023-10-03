@@ -19,7 +19,7 @@ int max(int *numbers, int size) {
 
 int main() {
   int numbers[] = {0,0,0,0,0,0,0};
-  printf("%d",max(numbers, -1));
+  printf("%d",max(numbers, 1));
 	return 0;
 }
 
