@@ -21,8 +21,14 @@ void add(node *head, int x) {
 
 // exersice 3.b
 int size(node *l) {
-
-	return 0;
+  assert(l!=NULL);
+  node *p =l;
+  int size=0;
+  while(p->next!=NULL){
+    size++;
+    p=p->next;
+}
+	return size;
 }
 
 // exersice 3.c and 3.d
@@ -50,14 +56,12 @@ int largest(node *l) {
 int main() {
   node *list = malloc(sizeof(node));
   list->next = NULL; // create first empty element
-
   add(list, 1);
   add(list, 3);
   add(list, 2);
   // Show list here
   add(list, 2);
   // Show list here
-
   return 0;
 }
 
