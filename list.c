@@ -48,8 +48,15 @@ int largest(node *l) {
   // pre:  head poinst to the first, empty element.
   // 	     The last element's next is NULL.
   // post: Returns the largest value of the list
-
-  return 0;
+  node *p=l->next;
+  int largest=p->data;
+  while (p->next!=NULL){
+    if (largest<p->next->data){
+      largest=p->next->data;
+    }
+    p=p->next;
+  }
+  return largest;
 }
 
 #ifndef TEST
