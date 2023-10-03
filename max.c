@@ -18,8 +18,8 @@ int max(int *numbers, int size) {
 #ifndef TEST
 
 int main() {
-  int numbers[] = {0,0,0,0,0,0,0};
-  printf("%d",max(numbers, 1));
+  int numbers[] = {-2, -5, -42, -67, -100, -1};
+  printf("%d",max(numbers, 6));
 	return 0;
 }
 
